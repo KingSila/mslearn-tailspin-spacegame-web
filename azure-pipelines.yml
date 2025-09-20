@@ -41,3 +41,7 @@ steps:
       command: "build"
       arguments: "--no-restore --configuration Release"
       projects: "**/*.csproj"
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "16.x"
+    displayName: "Install Node.js"

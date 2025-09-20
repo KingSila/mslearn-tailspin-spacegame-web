@@ -12,13 +12,13 @@ steps:
     displayName: "Use .NET SDK 6.x"
     inputs:
       packageType: sdk
-      version: "6.x"
+      version: "8.x"
 
   - task: NodeTool@0
     inputs:
       versionSpec: "16.x"
     displayName: "Install Node.js"
-    
+
   - task: Npm@1
     displayName: "Run npm install"
     inputs:
